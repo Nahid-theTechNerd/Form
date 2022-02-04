@@ -1,0 +1,125 @@
+/* Font */
+@font-face {
+  font-family: "typo";
+  src: url("../fonts/typo_light.woff") format("woff");
+  font-weight: 100;
+  font-style: thin;
+  font-display: swap;
+}
+@font-face {
+  font-family: "typo";
+  src: url("../fonts/typo_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "typo";
+  src: url("../fonts/typo_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+/* Font end  */
+
+body {
+  font-family: "typo";
+  background-image: url(../images/bg.jpg);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Global Design */
+h1 {
+  font-size: 36px;
+  color: #492c7e;
+}
+h2 {
+  color: #1c0e3f;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+input,
+textarea {
+  height: 40px;
+  width: 80%;
+  text-indent: 15px;
+  font-size: 16px;
+  border: 1px solid #492c7e;
+  color: #492c7e;
+  font-family: typo;
+}
+textarea{
+  height: 120px;
+  overflow-y: scroll;
+}
+input:focus {
+  background-color: #492c7e0e;
+  color: #1c0e3f;
+  border: 1px solid #  color: #1c0e3f;
+}
+button {
+  background-color: #492c7e;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border: 0;
+  font-family: typo;
+  font-weight: 400;
+  font-size: 18px;
+}
+button:hover{
+  background-color: #1c0e3f;
+}
+
+/* Common Style */
+.purple {
+  color: #1c0e3f;
+}
+.container {
+  max-width: 1440px;
+  height: 80%;
+  width: 70%;
+  align-items: center;
+  display: flex;
+}
+
+.left {
+  width: 45%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+  padding: 10px;
+}
+
+.right {
+  width: 55%;
+  height: 100%;
+  background-color: white;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
