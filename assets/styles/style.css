@@ -20,8 +20,8 @@
   font-style: bold;
   font-display: swap;
 }
-/* Font end  */
 
+/* Font end  */
 body {
   font-family: "typo";
   background-image: url(../images/bg.jpg);
@@ -55,31 +55,41 @@ textarea {
   width: 80%;
   text-indent: 15px;
   font-size: 16px;
-  border: 1px solid #492c7e;
+  border: 1px solid #492c7e44;
+  border-radius: 8px;
   color: #492c7e;
-  font-family: typo;
+  font-family: Nunito;
 }
-textarea{
+textarea {
   height: 120px;
   overflow-y: scroll;
 }
-input:focus {
+input:focus,
+textarea:focus {
   background-color: #492c7e0e;
+  outline: none;
   color: #1c0e3f;
-  border: 1px solid #  color: #1c0e3f;
+  border: 1px solid #1c0e3f;
+}
+textarea::-webkit-scrollbar {
+  width: 0px;
 }
 button {
   background-color: #492c7e;
   color: white;
   height: 40px;
   width: 200px;
+  margin: 10px;
   border: 0;
+  border-radius: 8px;
   font-family: typo;
   font-weight: 400;
   font-size: 18px;
 }
-button:hover{
-  background-color: #1c0e3f;
+button:hover {
+  background-color: white;
+  color: #1c0e3f;
+  border: 2px solid #1c0e3f;
 }
 
 /* Common Style */
