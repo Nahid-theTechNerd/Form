@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
     <title>WeTech Devs</title>
 </head>
 <body>
@@ -17,16 +18,19 @@
             <h1>WeTech<span class="purple">_Devs</span></h1>
         </div>
         <div class="right">
-            <form action="" method="post">
+            <form id="work__submit" action="./index.html" method="post">
                 <h2>Submit Your Work</h3>
-                    <input type="text" name="name" placeholder="Enter Your Name">
-                    <input type="email" name="email" placeholder="Enter Your Email Address">
-                    <input type="tel" name="phone" placeholder="Enter Your Contact Number">
-                    <input type="text" name="work" placeholder="Enter Your Live Site URL">
-                    <textarea name="comment" rows="4" placeholder="Enter a Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                    <input type="tel" name="phone" id="contact" placeholder="Enter Your Contact Number">
+                    <input type="text" name="work" id="url" placeholder="Enter Your Live Site URL">
+                    <textarea name="comment" rows="4" placeholder="Enter a Message" id="comment"></textarea>
+                    <button type="submit" onclick="log">Submit</button>
             </form>
         </div>
     </div>
+
+    <!-- Script Added Here -->
+    <script src="./assets/javascript/script.js"></script>
 </body>
 </html>
